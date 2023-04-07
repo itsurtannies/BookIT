@@ -44,6 +44,12 @@ section{
     padding:.8rem 3rem;
 }
 
+.btn:hover{
+    color:var(--black);
+    background: #D0B49F;
+    letter-spacing: .1rem;
+}
+
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
