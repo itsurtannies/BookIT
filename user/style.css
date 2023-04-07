@@ -74,6 +74,20 @@ header .icons a{
     line-height: 4.5rem;
     width: 4.5rem;
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     color: var(--black);
 }
+
+
+/* media queries */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding:1rem 2rem;
+    }
+}
+
