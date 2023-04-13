@@ -137,6 +137,15 @@ header .icons a{
     font-weight: normal;
 }
 
+.home .container .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 9rem;
+
+}
+
 
 
 
