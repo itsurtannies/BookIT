@@ -128,18 +128,19 @@ header .icons a{
 .home .container .slide .image img{
     max-width: 100%;
     height: auto;
+    right: auto;
     
 }
 
 .home .container .slide .content h1{
     color: var(--black);
-    font-size: 7rem;
+    font-size: 5.7rem;
     font-weight:800;
 }
 
 .home .container .slide .content p{
     color: var(--black);
-    font-size: 6rem;
+    font-size: 4.4rem;
     font-weight: normal;
 }
 
@@ -155,10 +156,6 @@ header .icons a{
 
 
 
-
-
-
-
 /* media queries */
 @media (max-width:991px){
 
@@ -170,4 +167,3 @@ header .icons a{
         padding:1rem 2rem;
     }
 }
-
