@@ -258,7 +258,7 @@ header .icons a{
     border: 2px solid;
     border-color: #ffffff;   
     border-collapse: collapse;
-    font-family: "Roboto";
+    font-family: 'Roboto';
 }
 
 .dashboard .dashcontainer .dashslide .table th{
@@ -270,7 +270,7 @@ header .icons a{
     border-color: #ffffff;   
     border-collapse: collapse;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .dashboard .dashcontainer .dashslide .table td{
@@ -282,7 +282,7 @@ header .icons a{
     border-collapse: collapse;
     text-align: center;
     height: 60px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .dashboard .dashcontainer .dashslide .table{
