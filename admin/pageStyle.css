@@ -40,19 +40,19 @@ section{
 
 .btn{
     margin-top: 1rem;
+    margin-left: 1rem;
     display: inline-block;
-    font-size: 1.7rem;
-    color:#fff;
-    background: #A47551;
-    border-radius: .5rem;
+    font-size: 1rem;
+    color:rgb(82, 58, 40);
+    background: rgb(228, 212, 200);
+    border-radius: 5px;
     cursor: pointer;
-    padding:.8rem 3rem;
+    padding:.8rem 1rem;
 }
 
 .btn:hover{
     color:var(--black);
     background: #D0B49F;
-    letter-spacing: .1rem;
 }
 
 header{
@@ -152,24 +152,7 @@ header .icons a{
 
 }
 
-.browse .browsecontainer .browseslide{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding-top: 9rem;
-    
-
-}
-.browse .browsecontainer .browseslide .browsecontent{
-    flex-wrap: 1 1 45rem;
-}
-
-.browse .browsecontainer .browseslide .browsecontent h2{
-    color: var(--black);
-    font-size: 2.5rem;
-    font-weight:800;
-}
+/* adminDashboard */ 
 
 .dashboard .dashcontainer .dashslide .dashcontent{
     flex-wrap: 1 1 45rem;
@@ -182,7 +165,6 @@ header .icons a{
     font-weight:800;
 }
 
-
 .dashboard .dashcontainer .dashslide .dashcontent{
     display: flex;
     align-items: center;
@@ -193,15 +175,6 @@ header .icons a{
 
 .dashboard .dashcontainer .dashslide .date{
     flex-wrap: 1 1 45rem;
-}
-
-.dashboard .dashcontainer .dashslide .date i{
-    color: rgb(91, 96, 201);
-    font-size: 1.3rem;
-    font-weight:800;
-}
-
-.dashboard .dashcontainer .dashslide .date{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -209,44 +182,10 @@ header .icons a{
     padding-top: 2rem;
 }
 
-.bookings .bookingscontainer .bookingsslide .bookingscontent{
-    flex-wrap: 1 1 45rem;
-}
-
-
-.bookings .bookingscontainer .bookingsslide .bookingscontent h2{
-    color: var(--black);
-    font-size: 2.5rem;
+.dashboard .dashcontainer .dashslide .date i{
+    color: rgb(91, 96, 201);
+    font-size: 1.3rem;
     font-weight:800;
-}
-
-
-.bookings .bookingscontainer .bookingsslide .bookingscontent{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding-top: 9rem;
-}
-
-.rbasics .rbasicscontainer .rbasicsslide .rbasicscontent{
-    flex-wrap: 1 1 45rem;
-}
-
-
-.rbasics .rbasicscontainer .rbasicsslide .rbasicscontent h2{
-    color: var(--black);
-    font-size: 2.5rem;
-    font-weight:800;
-}
-
-
-.rbasics .rbasicscontainer .rbasicsslide .rbasicscontent{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding-top: 9rem;
 }
 
 .dashboard .dashcontainer .dashslide .table{
@@ -292,6 +231,108 @@ header .icons a{
     gap: 2rem;
     padding-top: 2rem;
 }
+
+/* incomingBookings */ 
+
+.bookings .bookingscontainer .bookingsslide .bookingscontent{
+    flex-wrap: 1 1 45rem;
+}
+
+.bookings .bookingscontainer .bookingsslide .bookingscontent h2{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight:800;
+}
+
+.bookings .bookingscontainer .bookingsslide .bookingscontent{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 9rem;
+}
+
+/* restauBasics */ 
+
+.rbasics .rbasicscontainer .rbasicsslide .rbasicscontent{
+    flex-wrap: 1 1 45rem;
+}
+
+
+.rbasics .rbasicscontainer .rbasicsslide .rbasicscontent h2{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight:800;
+}
+
+
+.rbasics .rbasicscontainer .rbasicsslide .rbasicscontent{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 9rem;
+}
+
+.rbasics .rbasicscontainer .rbasicsslide .staffmem{
+    flex-wrap: 1 1 45rem;
+    color: rgb(91, 96, 201);
+    font-size: 2rem;
+    font-weight:650;
+    font-family: 'Inter';
+    padding-top: 2rem;
+}
+
+.rbasics .rbasicscontainer .rbasicsslide .staffmem i{
+    color: rgb(91, 96, 201);
+    font-size: 1.3rem;
+    font-weight:800;
+}
+
+.rbasics .rbasicscontainer .rbasicsslide .table{
+    display: table;
+}
+
+.rbasics .rbasicscontainer .rbasicsslide .table table{
+    width: 100%;
+    border: 2px solid;
+    border-color: #ffffff;   
+    border-collapse: collapse;
+    font-family: 'Roboto';
+}
+
+.rbasics .rbasicscontainer .rbasicsslide .table th{
+    background-color: rgb(228, 212, 200, 0.9);
+    color: rgb(82, 58, 40);
+    font-size: 1.3rem;
+    font-weight:800;
+    border: 2px solid;
+    border-color: #ffffff;   
+    border-collapse: collapse;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.rbasics .rbasicscontainer .rbasicsslide .table td{
+    background-color: rgb(228, 212, 200, 0.5);
+    color: rgb(82, 58, 40);
+    font-size: 1.3rem;
+    border: 2px solid;
+    border-color: #ffffff;   
+    border-collapse: collapse;
+    text-align: center;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.rbasics .rbasicscontainer .rbasicsslide .table{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
 
 
 
