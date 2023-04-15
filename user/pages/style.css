@@ -138,13 +138,13 @@ header .icons a{
   .browse .browsecontainer .browsewrapper .box h3 {
     margin-top: 1rem;
     margin-bottom: .5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--black);
   }
   
   .browse .browsecontainer .browsewrapper .box span {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--gray);
   }
   
