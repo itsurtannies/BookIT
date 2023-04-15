@@ -105,29 +105,20 @@ header .icons a{
     color: var(--black);
 }
 
-.browse .browsecontainer .browseslide{
-    align-items: center;
-    padding-top: 9rem;
-}
-
-.browse .browsecontainer{
+.browse .browsecontainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     gap: 1.5rem;
-}
-
-.browse .browsecontainer .browseslide .browsecontent h2{
-    color: var(--black);
-    font-size: 2.5rem;
-    font-weight:800;
-}
-
-.browseh2 h2{
- text-align: left;   
-}
-
-
-.browse .browsecontainer .browsewrapper .box{
+  }
+  
+  .browse .browsecontainer .browseslide {
+    display: flex;
+    align-items: center;
+    padding-top: 9rem;
+    grid-column: 1/-1;
+  }
+  
+  .browse .browsecontainer .browsewrapper .box {
     padding: 2.5rem;
     background-color: #E4D4C8;
     border-radius: .5rem;
@@ -136,13 +127,52 @@ header .icons a{
     position: relative;
     overflow: hidden;
     text-align: left;
-}
-
-.browse .browsecontainer .browsewrapper .box img{
-
+  }
+  
+  .browse .browsecontainer .browsewrapper .box img {
     height: 17rem;
     margin: 1rem 0;
+    object-fit: cover;
+  }
+  
+  .browse .browsecontainer .browsewrapper .box h3 {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--black);
+  }
+  
+  .browse .browsecontainer .browsewrapper .box span {
+    font-size: 1.5rem;
+    color: var(--gray);
+  }
+  
+  .browse .browsecontainer .browsewrapper .box .btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding:.6rem 1rem;
+    color:#fff;
+    background: #A47551;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+  }
+  
+  .browse .browsecontainer .browsewrapper .box .btn:hover {
+    color:var(--black);
+    background: #D0B49F;
+    letter-spacing: .1rem;
+  }
+  
+  .browse .browsecontainer .browseslide .browsecontent h2{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight:800;
+    text-align: left;   
 }
+  
 
 .dashboard .dashcontainer .dashslide .dashcontent{
     flex-wrap: 1 1 45rem;
