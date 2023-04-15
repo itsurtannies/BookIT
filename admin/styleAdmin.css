@@ -31,7 +31,6 @@ body, html{
 
 section{
     padding: 2rem 9%;
-    /* background-color: #E4D4C8; */
     background-image: url(images/bg.png);
     height: 100%;
     background-repeat: no-repeat;
@@ -151,63 +150,6 @@ header .icons a{
     gap: 2rem;
     padding-top: 9rem;
 
-}
-
-.browse .browsecontainer .browseslide{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding-top: 9rem;
-    
-
-}
-.browse .browsecontainer .browseslide .browsecontent{
-    flex-wrap: 1 1 45rem;
-}
-
-.browse .browsecontainer .browseslide .browsecontent h2{
-    color: var(--black);
-    font-size: 2.5rem;
-    font-weight:800;
-}
-
-.dashboard .dashcontainer .dashslide .dashcontent{
-    flex-wrap: 1 1 45rem;
-}
-
-
-.dashboard .dashcontainer .dashslide .dashcontent h2{
-    color: var(--black);
-    font-size: 2.5rem;
-    font-weight:800;
-}
-
-
-.dashboard .dashcontainer .dashslide .dashcontent{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding-top: 9rem;
-}
-
-.dashboard .dashcontainer .dashslide .date{
-    flex-wrap: 1 1 45rem;
-}
-
-.dashboard .dashcontainer .dashslide .date i{
-    color: rgb(101, 43, 226);
-    font-size: 1.3rem;
-    font-weight:800;
-}
-
-.dashboard .dashcontainer .dashslide .date{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding-top: 2rem;
 }
 
 
