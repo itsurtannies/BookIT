@@ -36,6 +36,15 @@ section{
     background-position: center;
 }
 
+section .benjarong{
+    background: #E4D4C8;
+    padding: 2rem 9%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 
 .btn{
     margin-top: 1rem;
