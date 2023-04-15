@@ -37,6 +37,23 @@ section{
 }
 
 
+.btn{
+    margin-top: 1rem;
+    display:inline-flex;
+    font-size: 1.3rem;
+    color:#fff;
+    background: #A47551;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.6rem 1rem;
+}
+
+.btn:hover{
+    color:var(--black);
+    background: #D0B49F;
+    letter-spacing: .1rem;
+}
+
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -89,22 +106,42 @@ header .icons a{
 }
 
 .browse .browsecontainer .browseslide{
-    display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
     padding-top: 9rem;
-    
-
 }
-.browse .browsecontainer .browseslide .browsecontent{
-    flex-wrap: 1 1 45rem;
+
+.browse .browsecontainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
 }
 
 .browse .browsecontainer .browseslide .browsecontent h2{
     color: var(--black);
     font-size: 2.5rem;
     font-weight:800;
+}
+
+.browseh2 h2{
+ text-align: left;   
+}
+
+
+.browse .browsecontainer .browsewrapper .box{
+    padding: 2.5rem;
+    background-color: #E4D4C8;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+
+.browse .browsecontainer .browsewrapper .box img{
+
+    height: 17rem;
+    margin: 1rem 0;
 }
 
 .dashboard .dashcontainer .dashslide .dashcontent{
@@ -126,3 +163,4 @@ header .icons a{
     gap: 2rem;
     padding-top: 9rem;
 }
+
