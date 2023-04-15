@@ -387,3 +387,194 @@ header .icons a{
     display: block;
     margin-bottom: 10px;
   }
+
+
+   /* Cosmic Poblacion  */
+
+.cosmic .cosmiccontainer .cosmicwrapper .cosmicslide .cosmiccontent img{
+    padding-top: 7rem;
+}
+
+.cosmiccontent h2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+.cosmiccontent .fa-star {
+    color: #0FA958;
+    font-size: 2rem;
+  }
+
+  .cosmic .cosmiccontainer .cosmicwrapper h2 {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--black);
+     text-align: left;
+  }
+  
+  .cosmic .cosmiccontainer .cosmicwrapper p {
+    font-size: 2rem;
+    color: var(--gray);
+    text-align: left;
+  }
+
+  .cosmic .cosmiccontainer .cosmicwrapper .cosmicslide .cosmiccontent .reserve-btn {
+    margin-top: 1rem;
+    padding:1rem 1rem;
+    color:#fff;
+    background: #A47551;
+    font-size: 2rem;
+    border: none;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+    font-weight: 530;
+    
+}
+.cosmic .cosmiccontainer .cosmicwrapper .cosmicslide .cosmiccontent .reserve-btn:hover{
+    color:var(--black);
+    background: #D0B49F;
+    letter-spacing: .1rem;
+}
+
+.cosmic .cosmiccontainer .cosmicwrapper .cosmicslide .cosmiccontent .reserve-btn {
+    float: right;
+}
+
+  .cosmiccontent2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px;
+    background-color: #F4EFEB;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .cosmiccontent2 h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-top: 2rem;
+  }
+
+  .cosmiccontent2 h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .cosmiccontent2 td{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .cosmiccontent2 p {
+    margin-bottom: 10px;
+    font-size: .5rem;
+    text-align: left;
+  }
+  
+  .cosmiccontent2 a {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+
+   /* Firefly Roofdeck  */
+
+.firefly .fireflycontainer .fireflywrapper .fireflyslide .fireflycontent img{
+    padding-top: 7rem;
+}
+
+.fireflycontent h2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+.fireflycontent .fa-star {
+    color: #0FA958;
+    font-size: 2rem;
+  }
+
+.fireflycontent .fa-star-half-alt {
+    color: #0FA958;
+    font-size: 2rem;
+  }
+
+  .firefly .fireflycontainer .fireflywrapper h2 {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--black);
+     text-align: left;
+  }
+  
+  .firefly .fireflycontainer .fireflywrapper p {
+    font-size: 2rem;
+    color: var(--gray);
+    text-align: left;
+  }
+
+  .firefly .fireflycontainer .fireflywrapper .fireflyslide .fireflycontent .reserve-btn {
+    margin-top: 1rem;
+    padding:1rem 1rem;
+    color:#fff;
+    background: #A47551;
+    font-size: 2rem;
+    border: none;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+    font-weight: 530;
+    
+}
+.firefly .fireflycontainer .fireflywrapper .fireflyslide .fireflycontent .reserve-btn:hover{
+    color:var(--black);
+    background: #D0B49F;
+    letter-spacing: .1rem;
+}
+
+.firefly .fireflycontainer .fireflywrapper .fireflyslide .fireflycontent .reserve-btn {
+    float: right;
+}
+
+  .fireflycontent2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px;
+    background-color: #F4EFEB;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .fireflycontent2 h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-top: 2rem;
+  }
+
+  .fireflycontent2 h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .fireflycontent2 td{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .fireflycontent2 p {
+    margin-bottom: 10px;
+    font-size: .5rem;
+    text-align: left;
+  }
+  
+  .fireflycontent2 a {
+    display: block;
+    margin-bottom: 10px;
+  }
