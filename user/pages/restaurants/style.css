@@ -104,3 +104,33 @@ header .icons a{
     font-size: 3rem;
     color: var(--black);
 }
+
+.benjarong .benjarongcontainer .benjarongwrapper .benjarongslide .benjarongcontent img{
+    padding-top: 7rem;
+}
+
+.benjarongcontent h2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+.benjarongcontent .fa-star {
+    color: #0FA958;
+    font-size: 2rem;
+  }
+
+.benjarong .benjarongcontainer .benjarongwrapper h2 {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--black);
+     text-align: left;
+  }
+  
+.benjarong .benjarongcontainer .benjarongwrapper p {
+    font-size: 2rem;
+    color: var(--gray);
+    text-align: left;
+  }
