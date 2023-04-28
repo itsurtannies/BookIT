@@ -162,7 +162,7 @@ header .icons a{
     display: flex;
     justify-content: space-between;
     margin: 3px;
-    background-color: #F4EFEB;
+    /* background-color: #F4EFEB; */
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -257,7 +257,7 @@ header .icons a{
     display: flex;
     justify-content: space-between;
     margin: 3px;
-    background-color: #F4EFEB;
+    /* background-color: #F4EFEB; */
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -354,7 +354,7 @@ header .icons a{
     display: flex;
     justify-content: space-between;
     margin: 3px;
-    background-color: #F4EFEB;
+    /* background-color: #F4EFEB; */
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -447,7 +447,7 @@ header .icons a{
     display: flex;
     justify-content: space-between;
     margin: 3px;
-    background-color: #F4EFEB;
+    /* background-color: #F4EFEB; */
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -545,7 +545,7 @@ header .icons a{
     display: flex;
     justify-content: space-between;
     margin: 3px;
-    background-color: #F4EFEB;
+    /* background-color: #F4EFEB; */
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -578,3 +578,81 @@ header .icons a{
     display: block;
     margin-bottom: 10px;
   }
+
+
+ /* Popup container */
+.reservation-popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Popup content */
+.reservation-popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* Close button */
+.reservation-popup-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.reservation-popup-close:hover,
+.reservation-popup-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form input[type="text"],
+.form textarea {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--light-color);
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.form input[type="submit"] {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #A47551;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #D0B49F;
+}
+
+.form label {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+

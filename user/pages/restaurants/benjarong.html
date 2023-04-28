@@ -9,6 +9,35 @@
     <!---font-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        // Get the popup element
+        var popup = document.getElementById("reservation-popup");
+        
+        // Get the button that opens the popup
+        var btn = document.getElementsByClassName("reserve-btn")[0];
+        
+        // Get the close button
+        var span = document.getElementsByClassName("reservation-popup-close")[0];
+        
+        // When the user clicks on the button, open the popup
+        btn.onclick = function() {
+          popup.style.display = "block";
+        }
+        
+        // When the user clicks on the close button, close the popup
+        span.onclick = function() {
+          popup.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the popup, close it
+        window.onclick = function(event) {
+          if (event.target == popup) {
+            popup.style.display = "none";
+          }
+        }
+        </script>
+        
 </head>
 
 <body>
@@ -92,18 +121,59 @@
                     </table>
                 </div>
 
-
                 
 
+
+                
             </div>
-           
-
         </div>
-
-        
-
     </div>
 
+    
+<!-- popup reservation box -->
+<div id="reservation-popup" class="reservation-popup">
+    <div class="reservation-popup-content">
+      <span class="reservation-popup-close">&times;</span>
+  <h3>**RESTAURANT NAME</h3>
+  <form action="#">  
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required>
+
+    <label for="party-size">Guests:</label>
+    <select id="party-size" name="party-size" required>
+      <option value="">#</option>
+      <option value="1">1 </option>
+      <option value="2">2 </option>
+      <option value="3">3 </option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9 </option>
+      <option value="10">10+</option>
+    </select>
+
+    <label for="party-type">Reservation Type:</label>
+    <select id="party-type" name="party-type" required>
+      <option value="">Select a reservation type</option>
+      <option value="Birthday">Birthday </option>
+      <option value="Anniversary">Anniversary </option>
+      <option value="Valentines">Valentines </option>
+      <option value="Holiday">Holiday </option>
+      <option value="Others">Others </option>
+    </select>
+
+    <label for="voucher">Voucher Code:</label>
+    <input type="text" id="voucher" name="voucher" required>
+
+    <button type="submit">Continue</button>
+  </form>
+</div>
+</div>
 </section>
 
 </body>
