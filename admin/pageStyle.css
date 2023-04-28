@@ -188,6 +188,13 @@ header .icons a{
     font-weight:800;
 }
 
+[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ; }
+[type="date"]::-webkit-inner-spin-button {
+    display: none; }
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0; }
+
 .dashboard .dashcontainer .dashslide .table{
     display: table;
 }
@@ -231,6 +238,31 @@ header .icons a{
     flex-wrap: wrap;
     gap: 2rem;
     padding-top: 2rem;
+}
+
+.dashboard .dashcontainer .dashslide .status{
+    flex-wrap: 1 1 45rem;
+    font-family: 'Inter';
+    padding-top: 2rem;
+}
+
+.dashboard .dashcontainer .dashslide .status a{
+    font-size: 1.7rem;
+    padding: .5rem 1.5rem;
+    color:var(--light-color);
+    font-weight: 650;
+    border-bottom: 1px solid transparent;
+    margin-top: 2rem;
+}
+
+.dashboard .dashcontainer .dashslide .status a:hover{
+    border-bottom:2px solid #666;
+    color: #5B60C9;
+}
+
+.dashboard .dashcontainer .dashslide .status a:active{
+    border-bottom:2px solid#666;
+    color: #5B60C9;
 }
 
 /* incomingBookings */ 
