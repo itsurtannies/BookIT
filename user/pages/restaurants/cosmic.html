@@ -103,7 +103,140 @@
 
     </div>
 
+
+<!-- popup reservation box -->
+<div id="reservation-popup" class="reservation-popup">
+    <div class="reservation-popup-content">
+      <span class="reservation-popup-close">&times;</span>
+  <h2>Cosmic Poblacion</h2>
+  <form action="#">  
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
+    <br>
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required>
+    <br>
+    <br>
+    <label for="party-size">Guests:</label>
+    <select id="party-size" name="party-size" required>
+      <option value="" disabled selected>--</option>
+      <option value="1">1 </option>
+      <option value="2">2 </option>
+      <option value="3">3 </option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9 </option>
+      <option value="10">10+</option>
+    </select>
+    <br>
+    <label for="party-type">Reservation Type:</label>
+    <select id="party-type" name="party-type" required>
+      <option value="" disabled selected>Select a reservation type</option>
+      <option value="Birthday">Birthday </option>
+      <option value="Anniversary">Anniversary </option>
+      <option value="Valentines">Valentines </option>
+      <option value="Holiday">Holiday </option>
+      <option value="Others">Others </option>
+    </select>
+    
+    <label for="voucher">Voucher Code:</label>
+    <input type="text" id="voucher" name="voucher" >
+
+    <button id="continue-btn" type="submit">Reserve</button>
+  </form>
+</div>
+    <!-- popup confirmation box -->
+    <div id="confirmation-popup" class="confirmation-popup">
+        <div class="confirmation-popup-content">
+            <span class="confirmation-popup-close">&times;</span>
+            <h3>Confirmation</h3>
+            <p>Your reservation has been confirmed!</p>
+            <br>
+            <br>
+            <h3><b>Reservation Details:</b></h3>
+            <br>
+            <ul>
+            <li>Date: <span id="confirmation-date"></span></li>
+            <li>Time: <span id="confirmation-time"></span></li>
+            <li>Guests: <span id="confirmation-party-size"></span></li>
+            <li>Reservation Type: <span id="confirmation-party-type"></span></li>
+            <li>Voucher Code: <span id="confirmation-voucher"></span></li>
+            </ul>
+        </div>
+    </div>
+    
 </section>
+
+<script>
+
+  // Get the popup elements
+  var reservationPopup = document.getElementById("reservation-popup");
+  var confirmationPopup = document.getElementById("confirmation-popup");
+
+  // Get the buttons that open the popups
+  var reserveBtn = document.getElementsByClassName("reserve-btn")[0];
+  var continueBtn = document.getElementById("continue-btn");
+
+  // Get the close buttons
+  var reservationClose = document.getElementsByClassName("reservation-popup-close")[0];
+  var confirmationClose = document.getElementsByClassName("confirmation-popup-close")[0];
+
+  // When the user clicks on the reserve button, open the reservation popup
+  reserveBtn.onclick = function() {
+    reservationPopup.style.display = "block";
+  }
+
+  // When the user clicks on the continue button, close the reservation popup and open the confirmation popup
+    continueBtn.onclick = function() {
+
+        // Get the input values from the reservation form
+        var dateInput = document.getElementById("date");
+        var timeInput = document.getElementById("time");
+        var partySizeInput = document.getElementById("party-size");
+        var partyTypeInput = document.getElementById("party-type");
+        var voucherInput = document.getElementById("voucher");
+        // Get the confirmation span elements
+        var confirmationDate = document.getElementById("confirmation-date");
+        var confirmationTime = document.getElementById("confirmation-time");
+        var confirmationPartySize = document.getElementById("confirmation-party-size");
+        var confirmationPartyType = document.getElementById("confirmation-party-type");
+        var confirmationVoucher = document.getElementById("confirmation-voucher");
+
+        // Update the confirmation spans with the input values
+        confirmationDate.innerHTML = dateInput.value;
+        confirmationTime.innerHTML = timeInput.value;
+        confirmationPartySize.innerHTML = partySizeInput.value;
+        confirmationPartyType.innerHTML = partyTypeInput.value;
+        confirmationVoucher.innerHTML = voucherInput.value;
+
+        // Close the reservation popup and open the confirmation popup
+        reservationPopup.style.display = "none";
+        confirmationPopup.style.display = "block";
+    }
+
+    // When the user clicks on the close button, close the reservation popup
+    reservationClose.onclick = function() {
+    reservationPopup.style.display = "none";
+    }
+
+    // When the user clicks on the close button, close the confirmation popup
+    confirmationClose.onclick = function() {
+    confirmationPopup.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the popups, close them
+    window.onclick = function(event) {
+    if (event.target == reservationPopup) {
+    reservationPopup.style.display = "none";
+    }
+    else if (event.target == confirmationPopup) {
+    confirmationPopup.style.display = "none";
+    }
+    }
+    </script>
 
 </body>
 </html>
