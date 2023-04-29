@@ -400,6 +400,25 @@ header .icons a{
     font-weight:800;
 }
 
+
+.rbasics .rbasicscontainer .rbasicswrapper .rbasicsslide .staffmem .newstaff-btn {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    display: inline-block;
+    font-size: 1rem;
+    color:rgb(82, 58, 40);
+    background: rgb(228, 212, 200);
+    border-radius: 5px;
+    cursor: pointer;
+    padding:.8rem 1rem;
+    
+}
+
+.rbasics .rbasicscontainer .rbasicswrapper .rbasicsslide .staffmem .newstaff-btn:hover{
+    color:var(--black);
+    background: #D0B49F;
+}
+
 .rbasics .rbasicscontainer .rbasicsslide .table{
     display: table;
 }
@@ -450,6 +469,202 @@ header .icons a{
     padding-top: 2rem;
 }
 
+/* Popup container */
+.reservation-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* Reservation popup */
+  .reservation-popup {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .reservation-popup-content {
+    position: relative;
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    max-width: 700px;
+  }
+  
+  .reservation-popup-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    margin: 10px 20px 0 0;
+    cursor: pointer;
+  }
+  
+  .reservation-popup h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #A47551;
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+    
+  }
+  
+  
+input[type="text"], input[type="password"], input[type="email"], input[type="number"] {
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+
+  }
+
+ input[type="email"], input[type="number"] {
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+
+  }
+  
+  select {
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 24px;    
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  select[disabled] {
+    color: #ccc;
+  }
+  
+  select option[disabled]:first-of-type {
+    display: none;
+  }
+  
+  
+  button[type="submit"] {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #A47551;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #D0B49F;
+  }
+  
+  /* Confirmation popup */
+  .confirmation-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .confirmation-popup {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .confirmation-popup-content {
+    position: relative;
+    background-color:#E4D4C8;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    max-width: 700px;
+    font-size: 20px;
+  }
+  
+  .confirmation-popup-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    margin: 10px 20px 20px 0;
+    cursor: pointer;
+    }
+    
+    .confirmation-popup-close:hover,
+    .confirmation-popup-close:focus {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    
+    .confirmation-popup h3 {
+    margin-top: 0;
+    font-size: 20px;
+    }
+    
+    .confirmation-popup ul {
+    list-style-type: none;
+    font-size: 20px;
+    padding: 0;
+    }
+    
+    .confirmation-popup li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    }
+    
+    .confirmation-popup span {
+    font-weight: bold;
+    font-size: 20px;
+    }
 
 
 
