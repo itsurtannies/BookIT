@@ -401,7 +401,7 @@ header .icons a{
 }
 
 
-.rbasics .rbasicscontainer .rbasicswrapper .rbasicsslide .staffmem .newstaff-btn {
+.rbasics .rbasicscontainer .rbasicswrapper .rbasicsslide .staffmem .addstaff-btn {
     margin-top: 1rem;
     margin-left: 1rem;
     display: inline-block;
@@ -414,7 +414,7 @@ header .icons a{
     
 }
 
-.rbasics .rbasicscontainer .rbasicswrapper .rbasicsslide .staffmem .newstaff-btn:hover{
+.rbasics .rbasicscontainer .rbasicswrapper .rbasicsslide .staffmem .addstaff-btn:hover{
     color:var(--black);
     background: #D0B49F;
 }
@@ -470,7 +470,7 @@ header .icons a{
 }
 
 /* Popup container */
-.reservation-popup {
+.auth-popup {
     display: none;
     position: fixed;
     z-index: 1;
@@ -482,19 +482,7 @@ header .icons a{
     background-color: rgba(0,0,0,0.4);
   }
   
-  /* Reservation popup */
-  .reservation-popup {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  .reservation-popup-content {
+  .auth-popup-content {
     position: relative;
     background-color: white;
     margin: 10% auto;
@@ -504,7 +492,7 @@ header .icons a{
     max-width: 700px;
   }
   
-  .reservation-popup-close {
+  .auth-popup-close {
     position: absolute;
     top: 0;
     right: 0;
@@ -513,7 +501,7 @@ header .icons a{
     cursor: pointer;
   }
   
-  .reservation-popup h2 {
+  .auth-popup h2 {
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
@@ -595,7 +583,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="num
   }
   
   /* Confirmation popup */
-  .confirmation-popup {
+  .newstaff-popup {
     display: none;
     position: fixed;
     z-index: 1;
@@ -607,7 +595,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="num
     background-color: rgba(0,0,0,0.4);
   }
   
-  .confirmation-popup {
+  .newstaff-popup {
     position: fixed;
     z-index: 1;
     left: 0;
@@ -618,9 +606,9 @@ input[type="text"], input[type="password"], input[type="email"], input[type="num
     background-color: rgba(0,0,0,0.8);
   }
   
-  .confirmation-popup-content {
+  .newstaff-popup-content {
     position: relative;
-    background-color:#E4D4C8;
+    background-color:white;
     margin: 10% auto;
     padding: 20px;
     border-radius: 5px;
@@ -629,7 +617,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="num
     font-size: 20px;
   }
   
-  .confirmation-popup-close {
+  .newstaff-popup-close {
     position: absolute;
     top: 0;
     right: 0;
@@ -638,30 +626,30 @@ input[type="text"], input[type="password"], input[type="email"], input[type="num
     cursor: pointer;
     }
     
-    .confirmation-popup-close:hover,
-    .confirmation-popup-close:focus {
+    .newstaff-popup-close:hover,
+    .newstaff-popup-close:focus {
     color: #aaa;
     text-decoration: none;
     cursor: pointer;
     }
     
-    .confirmation-popup h3 {
+    .newstaff-popup h3 {
     margin-top: 0;
     font-size: 20px;
     }
     
-    .confirmation-popup ul {
+    .newstaff-popup ul {
     list-style-type: none;
     font-size: 20px;
     padding: 0;
     }
     
-    .confirmation-popup li {
+    .newstaff-popup li {
     margin-bottom: 10px;
     font-size: 20px;
     }
     
-    .confirmation-popup span {
+    .newstaff-popup span {
     font-weight: bold;
     font-size: 20px;
     }

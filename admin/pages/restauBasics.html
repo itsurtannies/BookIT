@@ -42,7 +42,7 @@
 
                 <div class="staffmem">
                     Staff Members
-                    <a href="#" class="newstaff-btn">Add New +</a>
+                    <a href="#" class="addstaff-btn">Add New +</a>
                 </div>
 
                 <div class="table">
@@ -73,9 +73,9 @@
     </div>
 
 <!------- popup reservation box ------->
-<div id="reservation-popup" class="reservation-popup">
-    <div class="reservation-popup-content">
-      <span class="reservation-popup-close">&times;</span>
+<div id="auth-popup" class="auth-popup">
+    <div class="auth-popup-content">
+      <span class="auth-popup-close">&times;</span>
   <h2>Authorized Personnel Only!</h2>
 
   <form action="#">  
@@ -91,35 +91,35 @@
 </div>
 
 <!------- popup confirmation box ------->
-<div id="confirmation-popup" class="confirmation-popup">
-    <div class="confirmation-popup-content">
-        <span class="confirmation-popup-close">&times;</span>
+<div id="newstaff-popup" class="newstaff-popup">
+    <div class="newstaff-popup-content">
+        <span class="newstaff-popup-close">&times;</span>
         <h2>Add New Staff</h2>
 
         <form action="#">  
+
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-                <br>
+
                 <label for="role">Role:</label>
                 <select id="role" name="role" required>
                     <option value="" disabled selected>Select role</option>
                     <option value="staff">Staff </option>
                   </select>
-                <br>
+
                 <label for="phone">Phone:</label>
                 <input type="number" id="phone" name="phone" required>
-                <br>
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                <br>
+
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
-                <br>
+
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
-                <br>
 
-                <button id="continue-btn" type="submit">Confirm</button>
+                <button id="confirm-btn" type="submit">Confirm</button>
         </form>
     </div>
 </div>
@@ -128,47 +128,47 @@
 
 <script>
   // Get the popup elements
-  var reservationPopup = document.getElementById("reservation-popup");
-  var confirmationPopup = document.getElementById("confirmation-popup");
+  var authPopup = document.getElementById("auth-popup");
+  var newStaffPopup = document.getElementById("newstaff-popup");
 
   // Get the buttons that open the popups
-  var reserveBtn = document.getElementsByClassName("newstaff-btn")[0];
+  var newStaffBtn = document.getElementsByClassName("addstaff-btn")[0];
   var continueBtn = document.getElementById("continue-btn");
 
   // Get the close buttons
-  var reservationClose = document.getElementsByClassName("reservation-popup-close")[0];
-  var confirmationClose = document.getElementsByClassName("confirmation-popup-close")[0];
+  var authClose = document.getElementsByClassName("auth-popup-close")[0];
+  var newStaffClose = document.getElementsByClassName("newstaff-popup-close")[0];
 
-  // When the user clicks on the reserve button, open the reservation popup
-  reserveBtn.onclick = function() {
-    reservationPopup.style.display = "block";
+  // When the user clicks on the add staff button, open the newstaff popup
+  newStaffBtn.onclick = function() {
+  authPopup.style.display = "block";
   }
 
-  // When the user clicks on the continue button, close the reservation popup and open the confirmation popup
+  // When the user clicks on the continue button, close the newstaff popup and open the newstaff2 popup
     continueBtn.onclick = function() {
 
-        // Close the reservation popup and open the confirmation popup
-        reservationPopup.style.display = "none";
-        confirmationPopup.style.display = "block";
+        // Close the newstaff popup and open the newstaff2 popup
+        authPopup.style.display = "none";
+        newStaffPopup.style.display = "block";
     }
 
-    // When the user clicks on the close button, close the reservation popup
-    reservationClose.onclick = function() {
-    reservationPopup.style.display = "none";
+    // When the user clicks on the close button, close the newstaff popup
+    authClose.onclick = function() {
+    authPopup.style.display = "none";
     }
 
-    // When the user clicks on the close button, close the confirmation popup
-    confirmationClose.onclick = function() {
-    confirmationPopup.style.display = "none";
+    // When the user clicks on the close button, close the newstaff2 popup
+    newStaffClose.onclick = function() {
+    newStaffPopup.style.display = "none";
     }
 
     // When the user clicks anywhere outside of the popups, close them
     window.onclick = function(event) {
-    if (event.target == reservationPopup) {
-    reservationPopup.style.display = "none";
+    if (event.target == authPopup) {
+    authPopup.style.display = "none";
     }
-    else if (event.target == confirmationPopup) {
-    confirmationPopup.style.display = "none";
+    else if (event.target == newStaffPopup) {
+    newStaffPopup.style.display = "none";
     }
     }
 </script>
