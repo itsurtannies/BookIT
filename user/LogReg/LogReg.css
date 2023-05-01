@@ -24,6 +24,8 @@ body {
     background-attachment: fixed;
 }
 
+/* User Login and Registration CSS */
+
 .container {
     display: flex;
     align-items: center;
@@ -42,7 +44,7 @@ body {
   }
 
 
-/* Apply a basic style to the form container */
+
 .form-container {
     display: flex;
     flex-direction: column;
@@ -59,7 +61,6 @@ form {
     
 }
 
-/* Style the form header */
 form h1 {
     font-size: 35px;
     text-align: left;
@@ -67,13 +68,11 @@ form h1 {
     font-weight: 900;
 }
 
-/* Style the form labels */
 form label {
     font-size: 16px;
     margin-bottom: 3px;
 }
 
-/* Style the form inputs */
 form input[type="text"],
 form input[type="password"] {
     font-size: 16px;
@@ -83,7 +82,6 @@ form input[type="password"] {
     border-radius: 5px;
 }
 
-/* Style the form submit button */
 form input[type="submit"] {
     font-size: 16px;
     padding: 10px;
@@ -94,7 +92,6 @@ form input[type="submit"] {
     cursor: pointer;
 }
 
-/* Style the form submit button on hover */
 form input[type="submit"]:hover {
     background-color:#D0B49F;
 }
@@ -125,7 +122,6 @@ form button[type="button"] {
     cursor: pointer;
 }
 
-/* Style the form submit button on hover */
 form button[type="button"]:hover {
     background-color:#D0B49F;
 }

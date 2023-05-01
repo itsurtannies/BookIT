@@ -56,12 +56,29 @@
                 <br>
                     <br>
 
-            <!-- add booking details here -->
+           <!-- add booking details here -->
             <div class="dashbox">
                 <h3>Restaurant Name</h3>
                 <p>You reserved a table for (guest number, date and time)</p>
                 <br>
                 <input type="button" value="Cancel" class="cancel-btn">
+                
+                <!-- Cancellation Modal -->
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Cancel Reservation at <span id="restaurant-name"></span></h3>
+                            <span class="close">&times;</span>
+                        </div>
+                        <p>Are you sure you want to cancel your reservation at <span id="restaurant-name-reason"></span> on <span id="date-time"></span>?</p>
+                        <div class="form-group">
+                            <label for="reason">Reason for Cancellation:</label>
+                            <textarea id="reason" name="reason" rows="4" cols="50" placeholder="Please provide a reason for your cancellation"></textarea>
+                        </div>
+                        <button>Cancel </button>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -69,6 +86,9 @@
     </div>
 
 </section>
+<script>
+    
+</script>
 
 </body>
 </html>
