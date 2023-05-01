@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="AdminLogReg.css">
+</head>
+<body>
+<form>
+    <input type="text" name="username" id="username" placeholder="Enter username">
+    <input type="password" name="password" id="password" placeholder="Enter password">
+    <button type="button" onclick="login()">Login</button>
+</form>
+
+<script>
+        function login() {
+            var username = $("#username").val();
+            var password = $("#password").val();
+
+            var admin = {
+                "username": username,
+                "password": password
+            };
+
+            $.ajax({
+                type: "POST",
+                contentType: "application/json",
+                url: "/admin-login",
+                data: JSON.stringify(admin),
+                success: function (data) {
+                    // Handle successful login response here
+                    console.log("Login successful: ", data);
+                },
+                error: function (e) {
+                    // Handle error response here
+                    console.log("Error: ", e);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

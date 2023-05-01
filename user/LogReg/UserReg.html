@@ -6,26 +6,32 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="LogReg.css">
+    
 </head>
 <body>
+
+    <div class="container">
+        <div class="image">
+            <img src="../images/home icon.png" alt="">
+    </div>
     
-
-<form id="user-form">
-    <h1>Create </h1>
-    <h1>Account</h1>
-    <br>
-
-    <input type="text" id="name" name="name" placeholder= "Enter name"><br>
-   
-    <input type="text" id="username" name="username" placeholder= "Enter username"><br>
+    <form class="form-container">
+        <h1>Create </h1>
+        <h1>Account</h1>
+        <br>
     
-    <input type="text" id="phoneNumber" name="phoneNumber" placeholder= "+6390000000000"><br>
-   
-    <input type="password" id="password" name="password" placeholder= "Enter password"><br>
-    <a href="UserLogin.html" class="link"> Already have an account? Log in</a>
-    <input type="submit" value="Register">
-</form>
-
+        <input type="text" id="name" name="name" placeholder= "Enter name"><br>
+       
+        <input type="text" id="username" name="username" placeholder= "Enter username"><br>
+        
+        <input type="text" id="phoneNumber" name="phoneNumber" placeholder= "+6390000000000"><br>
+       
+        <input type="password" id="password" name="password" placeholder= "Enter password"><br>
+        <a href="UserLogin.html" class="link"> Already have an account? Log in</a>
+        <input type="submit" value="Register">
+    </form>
+    
+    </div>
 <script>
     $(document).ready(function() {
         $('#user-form').submit(function(event) {
