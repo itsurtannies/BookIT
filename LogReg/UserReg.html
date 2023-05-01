@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<h1>User Registration</h1>
+<form id="user-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email"><br><br>
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="text" id="phoneNumber" name="phoneNumber"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+    <input type="submit" value="Register">
+</form>
+
+<script>
+    $(document).ready(function() {
+        $('#user-form').submit(function(event) {
+            // Prevent default form submission
+            event.preventDefault();
+
+            // Get form data and convert to JSON format
+            var formData = {
+                'name': $('input[name=name]').val(),
+                'username': $('input[name=username]').val(),
+                'email': $('input[name=email]').val(),
+                'phoneNumber': $('input[name=phoneNumber]').val(),
+                'password': $('input[name=password]').val()
+            };
+            var jsonData = JSON.stringify(formData);
+
+            // Send AJAX POST request to register user
+            $.ajax({
+                type: 'POST',
+                url: '/user-register',
+                contentType: 'application/json',
+                data: jsonData,
+                success: function() {
+                    alert('User registered successfully!');
+                    // Redirect to login page or other page as needed
+                },
+                error: function() {
+                    alert('Error registering user. Please try again.');
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
