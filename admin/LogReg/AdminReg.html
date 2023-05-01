@@ -7,7 +7,81 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="AdminLogReg.css">
 </head>
+
 <body>
 
+    <div class="container">
+        <div class="image">
+            <img src="../images/home icon.png" alt="">
+    </div>
+    
+    <form class="form-container">
+        <h1>Create Account</h1>
+        <br>
+
+        <select id="assignedRestau" name="assignedRestau" required>
+            <option value="" disabled selected> -- Select Assigned Restaurant --</option>
+            <option value="benjarong">Benjarong Thai Restaurant</option>
+            <option value="nonya">Nonya Cafe</option>
+            <option value="cafe1228">Cafe 1228</option>
+            <option value="cosmic">Cosmic Poblacion</option>
+            <option value="firefly">Firefly Roofdeck Restaurant</option>
+        </select>
+
+        <select id="role" name="role" required>
+            <option value="" disabled selected>-- Select Staff Role --</option>
+            <option value="management"> Management </option>
+            <option value="host"> Host </option>
+        </select>
+    
+        <input type="text" id="name" name="name" placeholder= "Name" required><br>
+       
+        <input type="text" id="username" name="username" placeholder= "Enter Username" required><br>
+        
+        <input type="text" id="phoneNumber" name="phoneNumber" placeholder= "+6390000000000" required><br>
+       
+        <input type="password" id="password" name="password" placeholder= "Enter Password" required><br>
+
+        <input type="password" id="password2" name="password2" placeholder= "Confirm Password" required><br>
+        
+        <a href="UserLogin.html" class="link"> Already have an account? Log in</a>
+        <input type="submit" value="Register">
+    </form>
+    
+    </div>
+<script>
+    $(document).ready(function() {
+        $('#user-form').submit(function(event) {
+            // Prevent default form submission
+            event.preventDefault();
+
+            // Get form data and convert to JSON format
+            var formData = {
+                'name': $('input[name=name]').val(),
+                'username': $('input[name=username]').val(),
+                'email': $('input[name=email]').val(),
+                'phoneNumber': $('input[name=phoneNumber]').val(),
+                'password': $('input[name=password]').val()
+            };
+            var jsonData = JSON.stringify(formData);
+
+            // Send AJAX POST request to register user
+            $.ajax({
+                type: 'POST',
+                url: '/user-register',
+                contentType: 'application/json',
+                data: jsonData,
+                success: function() {
+                    alert('User registered successfully!');
+                    // Redirect to login page or other page as needed
+                },
+                error: function() {
+                    alert('Error registering user. Please try again.');
+                }
+            });
+        });
+    });
+</script>
 </body>
+
 </html>
