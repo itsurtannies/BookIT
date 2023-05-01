@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="LogReg.css">
+</head>
+<body>
+
+<form>
+    <h1>Welcome </h1>
+    <h1>Back!</h1>
+    <br>
+    <input type="text" name="username" id="username" placeholder="Enter username"><br>
+    <input type="password" name="password" id="password" placeholder="Enter password"><br>
+    <a href="UserReg.html" class="link"> Don't have an account yet? Register Now</a>
+    <button type="button" onclick="login()">Login</button>
+</form>
+
+<script>
+        function login() {
+            var username = $("#username").val();
+            var password = $("#password").val();
+
+            var user = {
+                "username": username,
+                "password": password
+            };
+
+            $.ajax({
+                type: "POST",
+                contentType: "application/x-www-form-urlencoded",
+                url: "/user-login",
+                data: {
+                    username: username,
+                    password: password
+                },
+                success: function (data) {
+                    // Handle successful login response here
+                    console.log("Login successful: ", data);
+                    window.location.href = "/user/index.html";
+                },
+                error: function (e) {
+                    // Handle error response here
+                    console.log("Error: ", e);
+                }
+            });
+        }
+</script>
+</body>
+</html>
+

@@ -17,6 +17,13 @@
     
 }
 
+body {
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 /* Apply a basic style to the form container */
 .form-container {
     display: flex;
