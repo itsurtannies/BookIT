@@ -584,6 +584,7 @@ header .icons a{
 .reservation-popup {
   display: none;
   position: fixed;
+  padding-top: 100px;
   z-index: 1;
   left: 0;
   top: 0;
@@ -593,36 +594,28 @@ header .icons a{
   background-color: rgba(0,0,0,0.4);
 }
 
-/* Reservation popup */
-.reservation-popup {
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.8);
-}
 
 .reservation-popup-content {
-  position: relative;
   background-color: white;
-  margin: 10% auto;
+  margin: auto;
   padding: 20px;
   border-radius: 5px;
-  width: 50%;
-  max-width: 700px;
+  width: 35%;
+  box-decoration-break: slice;
 }
 
 .reservation-popup-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 30px;
-  margin: 10px 20px 0 0;
-  cursor: pointer;
+  color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
 }
+
+.reservation-popup-close:hover, .confirmation-popup-close:hover, .reservation-popup-close:focus, .confirmation-popup-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  }
 
 .reservation-popup h2 {
   font-size: 24px;
@@ -631,21 +624,36 @@ header .icons a{
   color: #A47551;
 }
 
+  
+ 
+
 /* Form styles */
 form {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
 label {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: semibold;
   margin-right: 10px;
-  
+  text-align: left;
+  color: #666;
+  padding-bottom: 5px;
 }
+
+.form-group {
+  margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  }
 
 input[type="date"],
 input[type="time"],
@@ -655,9 +663,20 @@ select{
   margin-bottom: 30px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  width: 40%;
+  width: 50%;
+ 
 }
 
+select[id="party-size"]{
+  font-size: 15px;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 50%;
+  align-items: left;
+  text-align: left;
+}
 
 select[id="party-type"]{
   font-size: 15px;
@@ -665,17 +684,21 @@ select[id="party-type"]{
   margin-bottom: 30px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  width: 30%;
+  width: 50%;
+  align-items: left;
+  text-align: left;
 }
 
 
-input[type="text"] {
+input[type="voucher"] {
   font-size: 15px;
   padding: 10px;
   margin-bottom: 30px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  width: 30%;
+  width: 50%;
+  align-items: left;
+  text-align: left;
 }
 
 select {
@@ -683,15 +706,20 @@ select {
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 24px;
-  padding-right: 40px;
+  
 }
 
 select[disabled] {
   color: #ccc;
 }
 
-select option[disabled]:first-of-type {
+select option[value=""][disabled]:selected {
+  color: #999;
+}
+
+option[value=""][disabled][selected] {
   display: none;
+  color:var(--light-color);
 }
 
 

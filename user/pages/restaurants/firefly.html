@@ -103,15 +103,18 @@
     <div class="reservation-popup-content">
       <span class="reservation-popup-close">&times;</span>
   <h2>Firefly Roofdeck Restaurant</h2>
+  <br>
+  <br>
+  <br>
   <form action="#">  
-    <label for="date">Date:</label>
+    <label for="date">Date</label>
     <input type="date" id="date" name="date" required>
     <br>
-    <label for="time">Time:</label>
+    <label for="time">Time</label>
     <input type="time" id="time" name="time" required>
     <br>
     <br>
-    <label for="party-size">Guests:</label>
+    <label for="party-size">Guests</label>
     <select id="party-size" name="party-size" required>
       <option value="" disabled selected>--</option>
       <option value="1">1 </option>
@@ -126,18 +129,21 @@
       <option value="10">10+</option>
     </select>
     <br>
-    <label for="party-type">Reservation Type:</label>
-    <select id="party-type" name="party-type" required>
+    <label for="party-type">Reservation Type</label>
+    <select id="party-type" name="party-type"  required>
       <option value="" disabled selected>Select a reservation type</option>
       <option value="Birthday">Birthday </option>
       <option value="Anniversary">Anniversary </option>
       <option value="Valentines">Valentines </option>
       <option value="Holiday">Holiday </option>
       <option value="Others">Others </option>
+      <option value="None">None </option>
     </select>
     
-    <label for="voucher">Voucher Code:</label>
-    <input type="text" id="voucher" name="voucher" >
+    <label for="voucher">Voucher Code</label>
+    <input type="voucher" id="voucher" name="voucher" placeholder="enter voucher code" >
+    <br>
+  <br>
 
     <button id="continue-btn" type="submit">Reserve</button>
   </form>
